@@ -9,7 +9,7 @@ To use
 
 from .commands import SIGNATURES
 from .tools import build_command
-from .tools import Connection
+from .tools import Connection   # And available for export.
 
 
 class LowLevelInterface:

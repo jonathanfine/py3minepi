@@ -28,6 +28,15 @@ different input signatures.
 SIGNATURES = dict(
 
     ## Block commands.
+    get_block = (
+        'world.getBlock',
+        [int, int, int],  int,
+        '''Get block type at location (xi, yi, zi).
+
+        world.getBlock(x,y,z) --> blockTypeId
+        '''
+    ),
+
     set_block = (
         'world.setBlock',
         [int, int, int, int], None,
@@ -45,6 +54,9 @@ SIGNATURES = dict(
         world.setBlock(x, y, z, blockTypeId, blockData)
         '''
     ),
+
+
+
 
     get_height = (
         'world.getHeight',
